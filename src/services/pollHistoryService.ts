@@ -17,7 +17,7 @@ export interface PollHistoryResponse {
   message?: string;
 }
 
-const API_BASE_URL ="https://assignment-i-3.onrender.com";
+const API_BASE_URL ="https://back-poll-1.onrender.com";
 
 export const pollHistoryService = {
   async getPollHistory(limit?: number): Promise<PollHistoryResponse> {
