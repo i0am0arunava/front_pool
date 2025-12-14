@@ -144,12 +144,16 @@ const StudentStarter: React.FC = () => {
           </p>
 
           {/* Connection Status - only show when connecting */}
-          {!isConnected && (
-            <div className="flex items-center gap-2 mt-4">
-              <div className="w-2 h-2 rounded-full bg-red-500"></div>
-              <span className="text-sm text-gray-600">
-                Waking up the server...
+         {!isConnected && (
+            <div className="flex flex-col items-center text-center mt-4 gap-3">
+              <span className="text-m text-blue-600 max-w-md">
+                Backend is on Render free tier.
+                <br />
+                Initial websocket connection may take some time. Please wait or
+                close and reopen the site.
               </span>
+
+              <div className="w-8 h-8 border-2 border-gray-300 border-t-black rounded-full animate-spin"></div>
             </div>
           )}
         </div>
