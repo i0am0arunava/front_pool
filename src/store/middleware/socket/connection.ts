@@ -24,7 +24,7 @@ export const connectSocket = (dispatch: AppDispatch): Socket => {
     socket.disconnect();
   }
 
-  const serverUrl = "https://assignment-i-3.onrender.com";
+  const serverUrl = "https://back-poll-1.onrender.com";
   console.log("🔌 Connecting to WebSocket server:", serverUrl);
 
   socket = io(serverUrl, {
